@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Portifolio | TEST</title>
+    <!----------------- SCRIPTTTTT -------------------------------------->
+    <script>
+      function openIg() {
+        window.open("https://www.instagram.com/leduardomdias/");
+      }
+      function openX() {
+        window.open("https://twitter.com/leduardomdias");
+      }
+      function openHome() {
+        window.location.replace("1. index.html");
+      }
+      function openAbout() {
+        window.location.replace("2. about.html");
+      }
+      function openServices() {
+        window.location.replace("3. services.html");
+      }
+      function openPortfolio() {
+        window.location.replace("4. portfolio.html");
+      }
+      function openContact() {
+        window.open(
+          "https://api.whatsapp.com/send/?phone=5531995146211&text&type=phone_number&app_absent=0"
+        );
+      }
+    </script>
+    <!----------------- SCRIPTTTTT -------------------------------------->
+  </head>
+  <body>
+    <!----------------- HEADERRRRR -------------------------------------->
+
+    <header class="header">
+      <a href="#" class="logo" onclick="openHome()">Marques.</a>
+
+      <nav class="navbar">
+        <a href="#" class="active" onclick="openHome()">Home</a>
+        <a href="#" onclick="openAbout()">About</a>
+        <a href="#" onclick="openServices()">Services</a>
+        <a href="#" onclick="openPortfolio()">Portfolio</a>
+        <a href="#" onclick="openContact()">Contact</a>
+      </nav>
+    </header>
+    <!----------------- HEADERRRRR -------------------------------------->
+
+    <!----------------- SECTIOOONNNNNN -------------------------------------->
+
+    <section class="home">
+      <div class="home-content">
+        <h1>Olá, sou o Marques</h1>
+        <h3>Estudante de Computação</h3>
+        <p>
+          Sou um aluno iniciante em programação, sedento por conhecimento e
+          ansioso por desafios. Cada linha de código é uma descoberta, cada erro
+          é uma lição, e cada pequeno avanço é motivo de celebração.
+        </p>
+        <div class="btn-box">
+          <a href="#">Me contrate</a>
+          <a href="#">Conversar</a>
+        </div>
+      </div>
+      <div class="home-sci">
+        <a href="#" onclick="openIg()"><i class="bx bxl-instagram"></i></a>
+        <a href="#" onclick="openX()"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+      </div>
+
+      <div class="home-imgHover">
+        <img src="computer-desktop.svg" alt="" />
+      </div>
+    </section>
+
+    <!----------------- SECTIOOONNNNNN -------------------------------------->
+  </body>
+</html>
