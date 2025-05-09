@@ -1,0 +1,331 @@
+/* ==================== SERVICES PAGE STYLES ==================== */
+/* Add these styles to your existing CSS file */
+
+/* Services Banner */
+.services-banner {
+  background-color: var(--primary-color);
+  padding: 120px 0 60px;
+  text-align: center;
+}
+
+.banner-content {
+  color: var(--light-color);
+}
+
+.banner-content h1 {
+  font-size: 2.5rem;
+  color: var(--light-color);
+  margin-bottom: 1rem;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: var(--container-color);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  transition: transform 0.4s, box-shadow 0.4s, background-color 0.4s;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .service-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.service-icon {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  margin-bottom: 1.5rem;
+}
+
+.service-button {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--primary-color);
+  font-weight: var(--font-medium);
+}
+
+.service-button i {
+  font-size: 1rem;
+  transition: transform 0.4s;
+  margin-left: 0.25rem;
+}
+
+.service-button:hover i {
+  transform: translateX(0.25rem);
+}
+
+/* Skills section */
+.skills-container {
+  row-gap: 0;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.skills-group {
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
+  width: 100%;
+  max-width: 350px;
+}
+
+.skills-data {
+  margin-bottom: 1rem;
+}
+
+.skills-titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skills-name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills-bar,
+.skills-percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills-bar {
+  background-color: var(--border-color);
+}
+
+.skills-percentage {
+  display: block;
+  background-color: var(--primary-color);
+}
+
+.skills-html {
+  width: 90%;
+}
+
+.skills-css {
+  width: 90%;
+}
+
+.skills-js {
+  width: 85%;
+}
+
+.skills-java {
+  width: 60%;
+}
+
+.skills-react {
+  width: 30%;
+}
+
+.skills-node {
+  width: 50%;
+}
+
+/* Testimonials section */
+.testimonial-container {
+  overflow: hidden;
+  padding-bottom: 3rem;
+}
+
+.testimonial-card {
+  background-color: var(--container-color);
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.4s;
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.testimonial-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-description {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.testimonial-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.testimonial-name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-profession {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+}
+
+.testimonial-stars {
+  color: var(--primary-color);
+  font-size: 1.15rem;
+}
+
+/* CTA section */
+.cta-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 4rem;
+  background-color: var(--container-color);
+  padding: 3rem;
+  border-radius: 1.5rem;
+  transition: background-color 0.4s;
+}
+
+.cta-title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cta-img {
+  justify-self: center;
+}
+
+.cta-img img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 1.5rem;
+}
+
+/* Swiper styles for testimonials */
+.swiper-pagination-bullet {
+  background-color: var(--border-color);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+}
+
+/* Animation for skills */
+@keyframes skill-bar-fill {
+  0% {
+    width: 0;
+  }
+}
+
+.skills-percentage {
+  animation: skill-bar-fill 2s ease-in-out forwards;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .skills-box {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .cta-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cta-description {
+    margin: 0 auto 2rem;
+  }
+
+  .cta-img {
+    order: -1;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-banner {
+    padding: 100px 0 40px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .skills-group {
+    max-width: 100%;
+  }
+
+  .cta-img img {
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-box {
+    align-items: center;
+  }
+
+  .testimonial-info {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+  }
+
+  .testimonial-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .cta-img img {
+    max-width: 250px;
+  }
+}
